@@ -1,0 +1,24 @@
+{
+  "name": "ubytovna-prachatice.cz",
+  "version": "1.0.0",
+  "description": "Website ubytovna-prachatice.cz",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "jquery": "^3.3.1",
+    "lightbox2": "^2.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakubboucek/ubytovna-prachatice.cz.git"
+  },
+  "author": "Jakub Bouček <pan@jakubboucek.cz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakubboucek/ubytovna-prachatice.cz/issues"
+  },
+  "homepage": "https://www.ubytovna-prachatice.cz"
+}

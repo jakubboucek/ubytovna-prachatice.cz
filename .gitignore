@@ -1,2 +1,6 @@
+node_modules
 vendor
 config.local.neon
+www/css/bundle.css
+www/js/bundle.js
+www/images/lightbox

@@ -4,13 +4,8 @@
     <meta charset="utf-8">
     <title>{ifset title}{include title|stripHtml} | {/ifset}Ubytovna Prachatice - levné ubytování Jižních Čechách</title>
     <link rel="shortcut icon" href="{$basePath}/favicon.ico">
-
-    <link rel="stylesheet" media="projection, screen" type="text/css" href="{$basePath}/files/css/style.css">
-    <link rel="stylesheet" href="{$basePath}/files/css/lightbox.css" type="text/css" media="screen">
-    <script type="text/javascript" src="{$basePath}/files/js/prototype.js"></script>
-    <script type="text/javascript" src="{$basePath}/files/js/scriptaculous.js?load=effects,builder"></script>
-    <script type="text/javascript" src="{$basePath}/files/js/lightbox.js"></script>
-
+    <link rel="stylesheet" media="projection, screen" type="text/css" href="{$basePath}/css/bundle.css">
+    <script type="text/javascript" src="{$basePath}/js/bundle.js"></script>
     {include 'includes/gtm-full.latte'}
 </head>
 <body>
@@ -69,12 +64,12 @@
                         <div class="right">
                             <h2>Fotogalerie</h2>
                             <div class="foto">
-                                <a rel="lightbox[1]" href="{$basePath}/files/storage/foto/foto4.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled4.jpg"></a>
-                                <a rel="lightbox[1]" href="{$basePath}/files/storage/foto/foto6.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled6.jpg"></a>
-                                <a class="last" rel="lightbox[1]" href="{$basePath}/files/storage/foto/foto17.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled17.jpg"></a>
-                                <a rel="lightbox[1]" href="{$basePath}/files/storage/foto/foto19.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled19.jpg"></a>
-                                <a rel="lightbox[1]" href="{$basePath}/files/storage/foto/foto25.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled29.jpg"></a>
-                                <a class="last" rel="lightbox[1]" href="{$basePath}/files/storage/foto/foto32.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled32.jpg"></a>
+                                <a data-lightbox="fotogalerie" href="{$basePath}/files/storage/foto/foto4.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled4.jpg"></a>
+                                <a data-lightbox="fotogalerie" href="{$basePath}/files/storage/foto/foto6.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled6.jpg"></a>
+                                <a class="last" data-lightbox="fotogalerie" href="{$basePath}/files/storage/foto/foto17.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled17.jpg"></a>
+                                <a data-lightbox="fotogalerie" href="{$basePath}/files/storage/foto/foto19.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled19.jpg"></a>
+                                <a data-lightbox="fotogalerie" href="{$basePath}/files/storage/foto/foto25.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled29.jpg"></a>
+                                <a class="last" data-lightbox="fotogalerie" href="{$basePath}/files/storage/foto/foto32.jpg"><img src="{$basePath}/files/storage/thumbs-index/nahled32.jpg"></a>
                             </div>
                             <a href="{link Static:, page=>fotogalerie}">Prohlédnout celou fotogalerii</a>
                         </div>

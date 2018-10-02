@@ -4,7 +4,7 @@
 .idea
 .DS_Store
 node_modules
-asset
+assets
 bower_components
 composer.json
 composer.lock
