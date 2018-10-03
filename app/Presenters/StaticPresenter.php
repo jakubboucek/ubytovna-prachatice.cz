@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace App\Presenters;
 
-use App\Components\TextRenderer;
-use App\Forms\ContactFormFactory;
-use App\Model\PageNotFoundException;
-use App\Model\Texts;
 use Nette;
 
 
