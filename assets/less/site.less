@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color: #7C1E12;
 }
 
 a, h1, h2, h3, h4, p, ul, li, form, fieldset, td {
@@ -36,12 +37,7 @@ img {
 
 #wrap {
   text-align: center;
-  background: url(../images/bg.png) 0 0 repeat-x #7C1E12;
-}
-
-#motiv {
-  background: url(../images/motiv.png) center 150px no-repeat;
-  text-align: center;
+  background: url(../images/bg.png) 0 0 repeat-x;
 }
 
 #wrap2 {
@@ -51,7 +47,6 @@ img {
 }
 
 #header {
-  width: 760px;
   height: 150px;
   position: relative;
 }
@@ -98,9 +93,12 @@ img {
 #menu {
   position: absolute;
   top: 0;
-  height: 33px;
-  width: 760px;
-  background: url(../images/menu.png) 0 0 no-repeat;
+  height: 31px;
+  width: 100%;
+  border: 1px solid #ff5f49;
+  border-radius: 0 0 5px 5px;
+  z-index: 100;
+  background: linear-gradient(#cc321d, #811f13);
 }
 
 #menu li {
@@ -111,7 +109,7 @@ img {
   border-right: 1px solid #600d03;
 }
 
-#menu li.last {
+#menu li:last-child {
   border-right: none;
 }
 
@@ -131,13 +129,33 @@ img {
 }
 
 #main {
-  background: url(../images/white-top.png) 0 0 no-repeat;
   color: #443e35;
+  background-color: white;
+  box-shadow: inset 0 0 20px -5px black;
+  border: 2px white solid;
+  border-radius: 5px;
+  padding: 30px 25px;
+  position: relative;
 }
 
-#main .in {
-  background: url(../images/white-bottom.png) left bottom no-repeat;
-  padding: 30px 25px;
+#main::before {
+  position: absolute;
+  background: url(../images/decor-left.png) right top no-repeat transparent;
+  width: 32px;
+  height: 116px;
+  content: " ";
+  left: -34px;
+  top: -14px;
+}
+
+#main::after {
+  position: absolute;
+  background: url(../images/decor-right.png) right top no-repeat transparent;
+  width: 65px;
+  height: 118px;
+  content: " ";
+  right: -67px;
+  top: 0px;
 }
 
 h2 {
@@ -173,15 +191,14 @@ h2 {
 }
 
 #middle {
-  background: url(../images/middle.png) 0 0 no-repeat;
-  width: 760px;
-  height: 314px;
   margin-top: 10px;
   color: #FFF;
-}
-
-#middle .in {
   padding: 30px 25px;
+
+  background-color: #962f21;
+  box-shadow: inset 0 0 20px -5px black;
+  border: 2px #962f21 solid;
+  border-radius: 5px;
 }
 
 #middle h2 {
@@ -284,13 +301,12 @@ table td {
 #bottom {
   margin-top: 10px;
   margin-bottom: 10px;
-  background: url(../images/bottom.png) 0 0 no-repeat;
-  width: 760px;
-  height: 176px;
   color: #FFF;
-}
 
-#bottom .in {
+  background-color: #6d1301;
+  box-shadow: inset 0 0 20px -5px black;
+  border: 2px #6d1301 solid;
+  border-radius: 5px;
   padding: 30px 25px;
 }
 
@@ -339,9 +355,11 @@ table td {
 }
 
 #footer {
-  background: url(../images/footer.png) 0 0 no-repeat;
   clear: both;
-  height: 87px;
+  padding: 20px;
+  background-color: #250905;
+  border-radius: 5px 5px 0 0;
+
 }
 
 #footer p a {
@@ -353,9 +371,9 @@ table td {
 }
 
 #footer p {
-  padding-top: 20px;
+  padding: 0;
+  margin: 0;
   color: #674943;
   font-size: 80%;
-  margin-left: 20px;
   line-height: 24px;
 }
