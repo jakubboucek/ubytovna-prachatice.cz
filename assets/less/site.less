@@ -1,5 +1,3 @@
-/* CSS Document */
-
 body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 0.9em;
@@ -35,6 +33,15 @@ img {
   border: none;
 }
 
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #f6511f;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 120%;
+  padding-bottom: 10px;
+}
+
 #wrap {
   text-align: center;
   background: url(../images/bg.png) 0 0 repeat-x;
@@ -49,45 +56,43 @@ img {
 #header {
   height: 150px;
   position: relative;
-}
 
-#header h1 {
-  position: absolute;
-  top: 33px;
-  left: 0;
-  width: 502px;
-  height: 117px;
-  overflow: hidden;
-  text-indent: -9999px;
-}
+  h1 {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 502px;
+    height: 117px;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
 
-#header h1 span {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../images/ubytovna-prachatice.png) 0 0 no-repeat;
-  z-index: 1;
-  cursor: pointer;
-}
+  span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/ubytovna-prachatice.png) 0 0 no-repeat;
+    z-index: 1;
+    cursor: pointer;
+  }
 
-#header p {
-  position: absolute;
-  right: 0;
-  top: 43px;
-  text-align: right;
-  color: #c4af9e;
-  line-height: 1.3em;
-}
-
-#header p a {
-  color: #FFF;
-}
-
-#header p a:hover {
-  text-decoration: none;
+  p {
+    position: absolute;
+    right: 0;
+    top: 43px;
+    text-align: right;
+    color: #c4af9e;
+    line-height: 1.3em;
+    a {
+      color: #FFF;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 #menu {
@@ -99,28 +104,28 @@ img {
   border-radius: 0 0 5px 5px;
   z-index: 100;
   background: linear-gradient(#cc321d, #811f13);
-}
 
-#menu li {
-  display: block;
-  float: left;
-  margin-top: 5px;
-  padding: 0 8px;
-  border-right: 1px solid #600d03;
-}
+  li {
+    display: block;
+    float: left;
+    margin-top: 5px;
+    padding: 0 8px;
+    border-right: 1px solid #600d03;
 
-#menu li:last-child {
-  border-right: none;
-}
+    &:last-child {
+      border-right: none;
+    }
 
-#menu li a {
-  padding: 0 10px;
-  color: #FFF;
-  text-decoration: none;
-}
+    a {
+      padding: 0 10px;
+      color: #FFF;
+      text-decoration: none;
 
-#menu li a:hover {
-  text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 #content {
@@ -136,58 +141,48 @@ img {
   border-radius: 5px;
   padding: 30px 25px;
   position: relative;
-}
 
-#main::before {
-  position: absolute;
-  background: url(../images/decor-left.png) right top no-repeat transparent;
-  width: 32px;
-  height: 116px;
-  content: " ";
-  left: -34px;
-  top: -14px;
-}
+  &::before {
+    position: absolute;
+    background: url(../images/decor-left.png) right top no-repeat transparent;
+    width: 32px;
+    height: 116px;
+    content: " ";
+    left: -34px;
+    top: -14px;
+  }
 
-#main::after {
-  position: absolute;
-  background: url(../images/decor-right.png) right top no-repeat transparent;
-  width: 65px;
-  height: 118px;
-  content: " ";
-  right: -67px;
-  top: 0px;
-}
+  &::after {
+    position: absolute;
+    background: url(../images/decor-right.png) right top no-repeat transparent;
+    width: 65px;
+    height: 118px;
+    content: " ";
+    right: -67px;
+    top: 0;
+  }
 
-h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #f6511f;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 120%;
-  padding-bottom: 10px;
-}
+  p {
+    padding: 5px 0;
+  }
 
-#main p {
-  padding: 5px 0;
-}
+  strong {
+    color: #f6511f;
+  }
 
-#main strong {
-  color: #f6511f;
-}
+  a {
+    color: #f6511f;
+    &:hover {
+      text-decoration: none;
+    }
 
-#main a {
-  color: #f6511f;
-}
-
-#main a:hover {
-  text-decoration: none;
-}
-
-#main ul li {
-  padding-left: 20px;
-  background: url(../images/bullet.png) left center no-repeat;
-  line-height: 22px;
-  margin-left: 15px;
+    ul li {
+      padding-left: 20px;
+      background: url(../images/bullet.png) left center no-repeat;
+      line-height: 22px;
+      margin-left: 15px;
+    }
+  }
 }
 
 #middle {
@@ -199,23 +194,22 @@ h2 {
   box-shadow: inset 0 0 20px -5px black;
   border: 2px #962f21 solid;
   border-radius: 5px;
-}
 
-#middle h2 {
-  color: #FFF;
-}
+  h2 {
+    color: #FFF;
+  }
 
-#middle p {
-  padding: 5px 0;
-}
+  p {
+    padding: 5px 0;
+  }
 
-#middle a {
-  color: #FFF;
-  text-decoration: underline;
-}
-
-#middle a:hover {
-  text-decoration: none;
+  a {
+    color: #FFF;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .left {
@@ -236,66 +230,67 @@ h2 {
   margin-bottom: 10px;
   border: 1px solid #E27364;
   padding: 2px;
-}
 
-.foto a:hover {
-  border: 1px solid #FFF;
-}
+  &:hover {
+    border: 1px solid #FFF;
+  }
 
-.foto a.last {
-  margin-right: 0;
-}
+  &.last {
+    margin-right: 0;
+  }
 
-.foto a img {
-  display: block;
+  img {
+    display: block;
+  }
 }
 
 .fotogalerie {
   padding-bottom: 10px;
-}
+  a {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #E27364;
+    padding: 2px;
+  }
 
-.fotogalerie a {
-  display: block;
-  float: left;
-  margin-right: 15px;
-  margin-bottom: 10px;
-  border: 1px solid #E27364;
-  padding: 2px;
-}
+  h2 {
+    clear: left;
+  }
 
-.fotogalerie h2 {
-  clear: left;
-}
+  a {
+    &:hover {
+      border: 1px solid #FFF;
+    }
 
-.fotogalerie a:hover {
-  border: 1px solid #FFF;
-}
+    &.last {
+      margin-right: 0;
+    }
 
-.fotogalerie a.last {
-  margin-right: 0;
-}
-
-.fotogalerie a img {
-  display: block;
+    img {
+      display: block;
+    }
+  }
 }
 
 table {
   width: 340px;
   color: #FFF;
-  border-collapse: collapse
-}
+  border-collapse: collapse;
 
-table th {
-  background: #872113;
-  border: 1px solid #872113;
-  padding: 3px 5px;
-  font-size: 90%;
-}
+  th {
+    background: #872113;
+    border: 1px solid #872113;
+    padding: 3px 5px;
+    font-size: 90%;
+  }
 
-table td {
-  background: #e27364;
-  border: 1px solid #872113;
-  padding: 3px 5px;
+  td {
+    background: #e27364;
+    border: 1px solid #872113;
+    padding: 3px 5px;
+  }
 }
 
 #bottom {
@@ -308,50 +303,52 @@ table td {
   border: 2px #6d1301 solid;
   border-radius: 5px;
   padding: 30px 25px;
+
+  h2 {
+    color: #FFF;
+  }
+
+  a {
+    color: #F6511F;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
-#bottom h2 {
-  color: #FFF;
-}
+#form {
+  label {
+    width: 90px;
+    float: left;
+  }
 
-#bottom a {
-  color: #F6511F;
-}
+  .input {
+    margin: 0 0 0 10px;
+    width: 160px;
+    padding: 3px 5px;
+    border: 1px solid #872113;
+    background: #e27364;
+    color: #250905;
+  }
 
-#bottom a:hover {
-  text-decoration: none;
-}
+  textarea.input {
+    width: 220px;
+    height: 70px;
+  }
 
-#form label {
-  width: 90px;
-  float: left;
-}
+  #submit {
+    margin-left: 100px;
+    background: #f6511f;
+    color: #FFF;
+    border: none;
+    padding: 3px 8px;
+  }
 
-#form .input {
-  margin: 0 0 0 10px;
-  width: 160px;
-  padding: 3px 5px;
-  border: 1px solid #872113;
-  background: #e27364;
-  color: #250905;
-}
-
-#form textarea.input {
-  width: 220px;
-  height: 70px;
-}
-
-#form #submit {
-  margin-left: 100px;
-  background: #f6511f;
-  color: #FFF;
-  border: none;
-  padding: 3px 8px;
-}
-
-#form p {
-  clear: left;
-  padding-bottom: 5px;
+  p {
+    clear: left;
+    padding-bottom: 5px;
+  }
 }
 
 #footer {
@@ -360,20 +357,19 @@ table td {
   background-color: #250905;
   border-radius: 5px 5px 0 0;
 
-}
+  p {
+    padding: 0;
+    margin: 0;
+    color: #674943;
+    font-size: 80%;
+    line-height: 24px;
 
-#footer p a {
-  color: #C4AF9E;
-}
+    a {
+      color: #C4AF9E;
 
-#footer p a:hover {
-  text-decoration: none;
-}
-
-#footer p {
-  padding: 0;
-  margin: 0;
-  color: #674943;
-  font-size: 80%;
-  line-height: 24px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
