@@ -5,8 +5,8 @@
     <title>{ifset title}{include title|stripHtml} | {/ifset}Ubytovna Prachatice - levné ubytování Jižních Čechách</title>
     <link rel="shortcut icon" href="{$basePath}/favicon.ico">
     <link rel="stylesheet" media="projection, screen" type="text/css" href="{$basePath}/css/bundle.css">
-    <script type="text/javascript" src="{$basePath}/js/bundle.js"></script>
     {include 'includes/gtm-full.latte'}
+    <script type="text/javascript" src="{$basePath}/js/bundle.js"></script>
 </head>
 <body>
 {include 'includes/gtm-noscript.latte'}
@@ -16,13 +16,11 @@
             <h1><a href="{link Static:, page=>'index'}"
                    title="Ubytovna Prachatice - levné ubytování v centru Prachatic">Ubytovna Prachatice - levné
                     ubytování Jižních Čechách<span></span></a></h1>
-            <ul id="menu">
-                <li><a href="{link Static:, page=>'index'}" title="Úvodní stránka Ubytovny Prachatice">Úvod</a></li>
-                <li><a href="{link Static:, page=>fotogalerie}" title="Fotografie ubytovny a okolí">Fotogalerie</a>
-                </li>
-                <li><a href="{link Static:, page=>kontakt}" title="Kontaktní informace">Kontakt</a>
-                </li>
-            </ul>
+            <nav id="menu">
+                <a href="{link Static:, page=>'index'}" title="Úvodní stránka Ubytovny Prachatice">Úvod</a>
+                <a href="{link Static:, page=>fotogalerie}" title="Fotografie ubytovny a okolí">Fotogalerie</a>
+                <a href="{link Static:, page=>kontakt}" title="Kontaktní informace">Kontakt</a>
+            </nav>
             <p><strong>Milan Grék</strong><br>
                 Starokasárenská 192, Prachatice<br>
                 Tel.: <a href="tel:+420775552302">+420 775 552 302</a><br>
