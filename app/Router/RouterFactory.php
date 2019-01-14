@@ -13,11 +13,18 @@ class RouterFactory
     use Nette\StaticClass;
 
 
+    /**
+     * @return RouteList
+     * @throws Nette\InvalidArgumentException
+     */
     public static function createRouter(): RouteList
     {
         $router = new RouteList;
+
+        $router[] = new Route('<page ubytovani|rezervace|ceny|cenik>.html', 'Static:redirectOld');
+
         $router[] = new Route('<page [a-z]+>.html', 'Static:default', Route::ONE_WAY);
-        $router[] = new Route('[<page [a-z]+>/]', 'Static:default');
+        $router[] = new Route('[<page [a-z]+>]', 'Static:default');
         return $router;
     }
 }
